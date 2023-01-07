@@ -1,0 +1,38 @@
+
+  /* CSS DO INICIO*/
+
+.img{
+    border-radius: 50px;
+    width: 300px;
+    float: left;
+    border: transparent thin solid;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 150px;
+} 
+   /* tela pequena */
+.img1{
+    border-radius: 50px;
+    width: 90%;
+    border: transparent thin solid;
+    overflow: auto;
+}
+
+.ajuste {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    width: 70%;
+}
+
+.h1{ 
+    margin-top: 150px;
+}
+
+.ajuste1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    
+}
+
+ 
+

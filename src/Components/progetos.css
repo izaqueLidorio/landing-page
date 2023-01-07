@@ -1,0 +1,17 @@
+/* PROGETOS CSS*/
+
+.progeto{
+    height: 200px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4f5f68 13%, #5e6b63 29%, #101010 82%);
+}
+
+
+.pr1{
+    font-family:sans-serif;
+    font-size: 1.5rem;
+    margin-top:90px;
+    color: aliceblue;
+}
