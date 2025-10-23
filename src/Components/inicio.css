@@ -1,38 +1,57 @@
 
   /* CSS DO INICIO*/
 
-.img{
-    border-radius: 50px;
-    width: 300px;
-    float: left;
-    border: transparent thin solid;
-    padding: 10px;
-    margin-left: 40px;
-    margin-right: 150px;
-} 
-   /* tela pequena */
-.img1{
-    border-radius: 50px;
-    width: 90%;
-    border: transparent thin solid;
-    overflow: auto;
+.perfil-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o conjunto */
+  gap: 250px; /* controla o espaço entre imagem e texto */
+  flex-wrap: wrap;
+  padding: 40px 60px;
 }
 
-.ajuste {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
+/* imagem */
+.perfil-img {
+  width: 350px;
+  border-radius: 25px;
+  border: 2px solid rgb(148, 150, 108);
+  transition: transform 0.3s ease;
+}
+
+.perfil-img:hover {
+  transform: scale(1.05);
+}
+
+/* texto */
+.perfil-texto {
+  max-width: 450px;
+  text-align: left;
+
+}
+
+/* responsividade */
+@media screen and (max-width: 768px) {
+  .perfil-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+     gap: 20px;
+  }
+
+  .perfil-img {
     width: 70%;
-}
-
-.h1{ 
-    margin-top: 150px;
-}
-
-.ajuste1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
-    
-}
-
  
+  }
 
+  .perfil-texto {
+    text-align: center;
+  }
+
+  .perfil-texto h1 {
+    font-size: 1.7rem;
+  }
+
+  .perfil-texto h4 {
+    font-size: 1.5rem;
+  }
+}

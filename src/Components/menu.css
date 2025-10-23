@@ -7,7 +7,7 @@ nav{
     width: 100%;
     position: fixed;
     text-align: center; 
-    background: linear-gradient(rgba(0, 93, 231, 0.7), transparent);
+    background: linear-gradient(#b19284, transparent);
     
 }
 
@@ -17,10 +17,9 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
- 
     display: inline-block;
-    margin: 15px 10px;
-    color: white;
+    margin: 15px 15px;
+    color: rgb(46, 44, 44);
     font-weight: 700;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
@@ -28,7 +27,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #3d3d3d;
+      color: #3d3d3d;
 }
 
 .secttion1{
@@ -39,18 +39,18 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(63.13deg, #2d8088e3 51.04%, #176d7abe 51.05%);
+    background: linear-gradient(63.13deg, #bfd6c7 51.04%, #c7bd93 51.05%);
 }
 
 .secttion2{
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-  background-color: rgb(49, 133, 201);
+  background-color: #ff7876;
 }
 .secttion3{
     width: 100%;
@@ -60,11 +60,37 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-  background-color: rgba(30, 185, 172, 0.651);
+  background-color: #73a39a;
 }
 
+.secttion4{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8c3b3;
+
+}
+
+.secttion5{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2a48f;
+
+}
+
+
+
 ul{
-    margin-right: 200px;
+    margin: auto;
 }
 .position{
     position: fixed;

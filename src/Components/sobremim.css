@@ -2,11 +2,17 @@
 	.um {
         width: auto;
         height: auto;
-        background-color: rgb(158, 167, 167);
         font-size: 1.2rem;
 	}
 	
 }
+.sobre-mim {
+  flex: 1.5;
+  margin: 10px;
+  color: rgb(67, 66, 66);
+  margin: 20px;
+}
+
 @media screen and (min-width: 608px) {
    .sobre-mim{
     width: 100%;
@@ -15,14 +21,16 @@
      font-size: 1.5rem;
      overflow:auto;
      border-radius: 5px;
-     background-color: rgb(179, 179, 179);
    }
 }
 .conteiner {
-    overflow:auto;
-    border-radius: 5px;
-    background: linear-gradient(63.13deg, #748f92e3 51.04%, #6a8083be 51.05%);
-  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  border-radius: 5px;
+    padding: 0;
 }
 
 .teste{
@@ -34,7 +42,6 @@
    
 .logo{
     width: 100%;
-    width: 100px;
     margin: 0;
     background-size: contain;
     background-position: center;
@@ -42,19 +49,30 @@
     cursor: pointer;
     transition: 0.7s;
 }
+
 .logo:hover{
     transform: rotateY(-360deg);
 }
-
+ 
+.habilidades {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
 
 .habilidades-container{
-    width: 150px;
+    width: 100px;
     margin: 10px;
     border-radius: 5px;
-    background-color: rgba(88, 138, 87, 0.795);
+    background-color: #ffc4b3;
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
 }
+
 .habilidades-container:hover{
-    background-color: rgb(75, 228, 152);
+    background-color:#f4f1ee;
 }
  
    

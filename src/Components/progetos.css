@@ -1,17 +1,64 @@
 /* PROGETOS CSS*/
-
-.progeto{
-    height: 200px;
-    width: 400px;
-    margin: 50px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #4f5f68 13%, #5e6b63 29%, #101010 82%);
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 120px;
+  row-gap: 40px;
+  justify-items: center; 
+  margin-top: 30px;
 }
 
+.projeto {
+  height: 200px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: rgb(51, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
-.pr1{
-    font-family:sans-serif;
-    font-size: 1.5rem;
-    margin-top:90px;
-    color: aliceblue;
+.projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.projeto:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+.projeto:hover {
+  background-color: rgb(96, 107, 112);
+}
+
+.pr1 {
+  background-color: #705656;
+  font-size: larger;
+  width: 100%;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+/* Responsividade */
+@media screen and (max-width: 978px) {
+  .projetos-grid {
+    grid-template-columns: 1fr; /* uma coluna no mobile */
+    gap: 20px;
+  }
+
+  .pr1 {
+    transform: rotate(0deg);
+  }
+}
+
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
 }

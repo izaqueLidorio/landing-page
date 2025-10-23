@@ -1,6 +1,7 @@
 import React, {Fragment}  from 'react'
 import './inicio.css'
-import Eudesenho from './Img/Eudesenho.jpg'
+import imagen_curriculo from './Img/imagen_curriculo.jpg'
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 
 const Inicio = () => {
@@ -9,27 +10,20 @@ const Inicio = () => {
     <Fragment>
         
              
-            
           
-            <div className=' ajuste d-none d-md-block' > 
-              <img className='img img-fluid ' src={Eudesenho} alt="Minha foto" /> 
-               <h1 className='h1'>
-               Ola, eu sou  <br/> Izaque Lidorio
-               </h1> 
-                <h4>Desenvolvedor Front-end</h4>
-               </div>
+     <div className="perfil-container">
+        <div className="perfil">
+         <img className="perfil-img" src={imagen_curriculo} alt="Minha foto" />
+       </div>
+ 
+       <div className="perfil-texto">
+        <h1>Olá, eu sou <br /> Izaque Lidorio</h1>
+        <h4><FaMapMarkerAlt /> São Miguel do Guaporé,<br />     Rondônia, Brasil</h4>
+       </div>
+    </div>
 
-             {/* imagem,texto para tela pequena */}
+   
 
-             <div className=' ajuste1 d-block d-md-none'> 
-             
-                <img className='img1'src={Eudesenho} alt="Minha foto" />
-                <h1>
-                 Ola, eu sou  <br/> Izaque Lidorio
-                </h1> 
-                <h4>Desenvolvedor Front-end</h4>
-             </div>
-        
      </Fragment>
   )
 }

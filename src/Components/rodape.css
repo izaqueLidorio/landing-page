@@ -1,0 +1,87 @@
+.rodape {
+  background: linear-gradient(63deg, #574b45, #c7bd93);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Container geral dos contatos */
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+/* Cada ícone + texto */
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Ícone em cima, texto embaixo */
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-container a {
+  color: white; 
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.icon-container a:hover {
+  color: #ff7876;
+  transform: scale(1.1);
+}
+
+/* Ícones */
+.icon-container svg {
+  font-size: 35px;
+}
+
+/* Texto embaixo dos ícones */
+.icon-container span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Rodapé inferior */
+.rodape p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  .icon-container svg {
+    font-size: 28px;
+  }
+
+  .contatos {
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contatos {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contatos {
+    gap: 70px;
+  }
+
+  .icon-container svg {
+    font-size: 40px;
+  }
+}
